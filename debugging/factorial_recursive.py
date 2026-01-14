@@ -2,6 +2,15 @@
 import sys
 
 def factorial(n):
+     """
+    Calculate the factorial of a non-negative integer recursively.
+
+    Parameters:
+        n (int): Number to calculate factorial (>=0)
+
+    Returns:
+        int: factorial of n
+    """ 
     if n == 0:
         return 1
     else:
