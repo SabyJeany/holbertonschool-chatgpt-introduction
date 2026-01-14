@@ -32,6 +32,8 @@ def tic_tac_toe():
             col = int(input("Enter column (0, 1, or 2) for player " + player + ": "))
             if board[row][col] == " ":
                 board[row][col] = player
+                if check_winner(board):
+                    break
                 if player == "X":
                     player = "O"
                 else:
